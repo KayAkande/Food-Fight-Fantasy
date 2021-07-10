@@ -22,7 +22,7 @@ public class Block extends GameObject {
      */
     public Block(int x, int y, Handler handler, SpriteSheet ss) {
         super(x, y, handler, ss);
-        block_image = ss.grabImage(5, 2, 32, 32);
+        block_image = ss.grabImage(2, 5 , 64, 64);
     }
 
     /**
@@ -55,7 +55,7 @@ public class Block extends GameObject {
     @Override
     public Rectangle getBounds() {
 
-        return new Rectangle(x, y, 32, 32);
+        return new Rectangle(x, y, 64, 64);
     }
 
     //We can use the methods below to specify multiple differential bounds for our GameObjects.

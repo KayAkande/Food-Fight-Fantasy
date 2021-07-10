@@ -11,7 +11,10 @@ public class SpriteSheet { //Takes an image designated as a sprite sheet and let
     }
 
     public BufferedImage grabImage(int col, int row, int width, int height) {
-        return image.getSubimage((col * 32) - 32, ((row * 32) - 32), width, height);
+        return image.getSubimage((col * 192) - 192, ((row * 192) - 192), width, height);
+    }
+    public BufferedImage grabRImage(int col, int row, int width, int height) {
+        return image.getSubimage((col * -192) + 1920, ((row * 192) - 192), width, height);
     }
 
 }
