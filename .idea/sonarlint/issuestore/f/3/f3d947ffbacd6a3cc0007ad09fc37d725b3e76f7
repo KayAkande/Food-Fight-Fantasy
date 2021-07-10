@@ -1,0 +1,22 @@
+
+E
+java:S1066l"/Merge this if statement with the enclosing one.(¸µÙà
+E
+java:S1066o"/Merge this if statement with the enclosing one.(õ±°¥
+E
+java:S1066z"/Merge this if statement with the enclosing one.(¸µÙà
+F
+java:S1066‰"/Merge this if statement with the enclosing one.(¸µÙà
+q	java:S116"WRename this field "player_image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ý×áýÿÿÿÿ
+J
+java:S2387"."anim" is the name of a field in "GameObject".(¯œÜ"8Äß¥Ö£/
+=
+java:S1125<"'Remove the unnecessary boolean literal.(Ö£€£
+m
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(žßÐßûÿÿÿÿ
+=
+java:S1125o"'Remove the unnecessary boolean literal.(õ±°¥
+=
+java:S1940|"(Use the opposite operator ("<") instead.(ùÍ½O
+>
+java:S1125™"'Remove the unnecessary boolean literal.(•˜ñ–

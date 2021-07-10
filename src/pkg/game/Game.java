@@ -53,10 +53,10 @@ public class Game extends Canvas implements Runnable { //Canvas provides a surfa
 
         BufferedImageLoader loader = new BufferedImageLoader();
 
-        sprite_sheet = loader.loadImage("/sprite_sheet.png");
+        sprite_sheet = loader.loadImage("/fff_ss.png");
 
         ss = new SpriteSheet(sprite_sheet);
-        floor = ss.grabImage(4, 2, 32, 32); //grabImage lets us pull from our sprite sheet, (row, column, width, height)
+        floor = ss.grabImage(1, 5, 64, 64); //grabImage lets us pull from our sprite sheet, (row, column, width, height)
         level1 = loader.loadImage("/wizard_level.png");
         this.addMouseListener(new MouseInput(handler, camera, this, ss));
 
@@ -212,19 +212,19 @@ public class Game extends Canvas implements Runnable { //Canvas provides a surfa
                 int blue = (pixel) & 0xff;
 
                 if (red == 255 && green == 0 && blue == 0)
-                    handler.addObject(new Block(xx * 32, yy * 32, handler, ss));
+                    handler.addObject(new Block(xx * 64, yy * 64, handler, ss));
 
                 if (green == 255 && blue == 0)
-                    handler.addObject(new Enemy(xx * 32, yy * 32, handler, ss));
+                    handler.addObject(new Enemy(xx * 64, yy * 64, handler, ss));
 
                 if (blue == 255 && green == 0 && red == 0)
-                    handler.addObject(new Player(xx * 32, yy * 32, handler, this, ss));
+                    handler.addObject(new Player(xx * 64, yy * 64, handler, this, ss));
 
                 if (blue == 255 && green == 255)
-                    handler.addObject(new AmmoCrate(xx * 32, yy * 32, handler, ss));
+                    handler.addObject(new AmmoCrate(xx * 64, yy * 64, handler, ss));
 
                 if (blue == 255 && red == 255)
-                    handler.addObject(new Exit(xx * 32, yy * 32, handler, ss));
+                    handler.addObject(new Exit(xx * 64, yy * 64, handler, ss));
 
             }
     }

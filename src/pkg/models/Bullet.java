@@ -6,11 +6,13 @@ import pkg.view.SpriteSheet;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.awt.image.BufferedImage;
 
 /**
  * @author Zack (RealTutsGML), Devin
  */
 public class Bullet extends GameObject {
+	private final BufferedImage[] bullet_image = new BufferedImage[3];
 
 
     /**
